@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                color: cornflowerblue;
+                line-height: 2em;
+            }
+            .outline1px {
+                filter: drop-shadow(1px 0px 0px #fff) 
+                        drop-shadow(0px 1px 0px #fff)
+                        drop-shadow(-1px 0px 0px #fff)
+                        drop-shadow(0px -1px 0px #fff);
+
+            }
+            .outline2px {
+                filter: drop-shadow(1px 1px 0px #fff) 
+                        drop-shadow(-1px -1px 0px #fff)
+                        drop-shadow(-1px 1px 0px #fff)
+                        drop-shadow(1px -1px 0px #fff);
+
+            }
+            .outline1px-blur {
+                filter: drop-shadow(1px 0px 1px #fff) 
+                        drop-shadow(0px 1px 1px #fff)
+                        drop-shadow(-1px 0px 1px #fff)
+                        drop-shadow(0px -1px 1px #fff)
+            }
+            .outline2px-blur {
+                filter: drop-shadow(1px 1px 1px #fff) 
+                        drop-shadow(-1px -1px 1px #fff)
+                        drop-shadow(-1px 1px 1px #fff)
+                        drop-shadow(1px -1px 1px #fff);
+
+            }
+        </style>
+    </head>
+<!--
+    <div><img src="test@2x.png" height="161px" >
+    </div>
+    
+    <div style="background: #006DE9">
+        <img src="test@2x.png" height="161px" style="filter: contrast(1.5) brightness(1.5);" >
+    </div>
+-->
+    <div><img src="test@2x.png" height="161px" >
+    </div>
+    
+    1px outline
+    
+    <div style="background: #006DE9">
+        <img src="test@2x.png" height="161px" class="outline1px" >
+    </div>
+    
+    2px outline
+    
+    <div style="background: #006DE9">
+        <img src="test@2x.png" height="161px" class="outline2px" >
+    </div>
+    
+    1px outline with blur
+    
+    <div style="background: #006DE9">
+        <img src="test@2x.png" height="161px" class="outline1px-blur" >
+    </div>
+    
+    2px outline with blur
+    
+    <div style="background: #006DE9">
+        <img src="test@2x.png" height="161px" class="outline2px-blur" >
+    </div>
+
+</html>
